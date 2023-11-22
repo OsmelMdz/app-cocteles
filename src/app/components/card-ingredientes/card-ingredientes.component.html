@@ -1,0 +1,24 @@
+<ion-grid>
+  <ion-row>
+    <ion-col class="cards" size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="3" *ngFor="let card of cards3">
+      <ion-card color="primary">
+        <ion-card-title class="ion-padding">
+          Tipo: {{card?.strType}}
+        </ion-card-title>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <ion-label color="dark">
+              Descripción: {{card?.strDescription}}
+            </ion-label><br>
+            <ion-label>
+              Alcohol: {{card?.strAlcohol}}
+            </ion-label><br>
+            <ion-label color="dark">
+              Ingrediente: {{card?.strIngredient}}
+            </ion-label>
+          </ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

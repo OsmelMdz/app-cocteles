@@ -1,0 +1,15 @@
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+ion-card {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  ion-card {
+    max-width: 200px;
+  }
+}

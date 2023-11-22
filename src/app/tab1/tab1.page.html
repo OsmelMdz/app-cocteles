@@ -1,17 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="primary">
     <ion-title>
-      Tab 1
+      Welcome to TheCocktailDB
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+  <br>
+  <input type="text" class="form-control" placeholder="Buscar Bebida..." (keyup.enter)="buscarC()" #txtBuscar>
+  <ion-spinner *ngIf="loading"></ion-spinner>
+  <app-cards [cards2]="cardsC"></app-cards>
 </ion-content>

@@ -1,0 +1,25 @@
+<ion-grid>
+  <ion-row>
+    <ion-col class="cards" size-xs="12" size-sm="6" size-md="6" size-lg="4" size-xl="3" *ngFor="let card of cards2">
+      <ion-card color="primary">
+        <ion-card-title class="ion-padding">
+          Drink: {{card?.strDrink}}
+        </ion-card-title>
+        <ion-img [src]="card.strDrinkThumb"></ion-img>
+        <ion-card-content>
+          <ion-card-subtitle>
+            <ion-label color="dark">
+              Categoria: {{card?.strCategory}}
+            </ion-label><br>
+            <ion-label>
+              Alcohol: {{card?.strAlcoholic}}
+            </ion-label><br>
+            <ion-label color="dark">
+              Tags: {{card?.strTags}}
+            </ion-label>
+          </ion-card-subtitle>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

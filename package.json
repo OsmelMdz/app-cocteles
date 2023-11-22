@@ -22,8 +22,10 @@
     "@angular/platform-browser-dynamic": "^17.0.2",
     "@angular/router": "^17.0.2",
     "@ionic/angular": "^7.0.0",
+    "@types/swiper": "^6.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
+    "swiper": "^11.0.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
